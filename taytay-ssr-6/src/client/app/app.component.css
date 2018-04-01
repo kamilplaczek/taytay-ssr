@@ -1,0 +1,27 @@
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin-left: 10px;
+}

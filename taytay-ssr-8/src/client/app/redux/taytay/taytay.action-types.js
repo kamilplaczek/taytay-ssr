@@ -1,0 +1,1 @@
+export const FETCH_PICS_SUCCESS = 'taytay/FETCH_PICS_SUCCESS';

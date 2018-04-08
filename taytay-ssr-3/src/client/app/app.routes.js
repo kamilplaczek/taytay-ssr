@@ -10,6 +10,5 @@ export const routes = [
   {
     component: Contact,
     path: '/contact',
-    exact: true,
   },
 ];

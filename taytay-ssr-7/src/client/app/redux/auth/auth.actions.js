@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch';
 import {LOGIN_SUCCESS} from './auth.action-types';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:3007';
 
 export const login = () => async dispatch => {
   const res = await fetch(API_URL + '/api/login', {

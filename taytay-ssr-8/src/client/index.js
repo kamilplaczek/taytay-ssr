@@ -8,7 +8,6 @@ import {createAppStore} from './create-store';
 import Cookies from 'js-cookie';
 
 const token = Cookies.get('taytayAuth');
-console.log(token);
 const store = createAppStore({
   ...(window.APP_STATE || {}),
   auth: {

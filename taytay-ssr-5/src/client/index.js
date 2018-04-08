@@ -8,7 +8,7 @@ import {createAppStore} from './create-store';
 
 const store = createAppStore(window.APP_STATE || {});
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store}>
     <BrowserRouter>
       <App />

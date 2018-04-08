@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch';
 import Cookies from 'js-cookie';
 import {LOGIN_SUCCESS} from './auth.action-types';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:3008';
 
 export const login = () => async dispatch => {
   const res = await fetch(API_URL + '/api/login', {

@@ -7,7 +7,6 @@ import {Provider} from 'react-redux';
 import {createAppStore} from './create-store';
 
 const token = localStorage.getItem('taytayAuth');
-console.log(token);
 const store = createAppStore({
   ...(window.APP_STATE || {}),
   auth: {

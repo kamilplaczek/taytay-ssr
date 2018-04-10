@@ -20,11 +20,11 @@ export class Home extends Component {
     }
   }
 
-  async componentWillMount() {
-    if (!this.props.staticContext.pics) {
-      await this.loadData();
+  componentWillMount() {
+    if (this.props.staticContext && this.props.staticContext.pics) {
+      this.setState({pics: this.props.staticContext.pics})
     } else {
-      this.setState({pics: this.props.staticContext.pics});
+      this.loadData();
     }
   }
 

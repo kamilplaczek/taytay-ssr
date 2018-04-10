@@ -22,14 +22,14 @@ export class Home extends Component {
     return [];
   }
 
-  async componentWillMount() {
+  componentWillMount() {
     let pics;
     if (this.props.staticContext && this.props.staticContext.data) {
       pics = this.props.staticContext.data;
     } else if (window && window.APP_STATE && window.APP_STATE.data) {
       pics = window.APP_STATE.data;
     } else {
-      pics = await Home.loadData();
+      pics = Home.loadData();
     }
     this.setState({pics});
   }

@@ -20,8 +20,8 @@ export class Home extends Component {
     }
   }
 
-  async componentWillMount() {
-    await this.loadData();
+  componentWillMount() {
+    this.loadData();
   }
 
   render() {

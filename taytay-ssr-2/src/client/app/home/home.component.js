@@ -20,14 +20,14 @@ export class Home extends Component {
     }
   }
 
-  async componentWillMount() {
+  componentWillMount() {
     if (this.props.staticContext && this.props.staticContext.pics) {
       this.setState({pics: this.props.staticContext.pics});
     } else if (window && window.APP_STATE && window.APP_STATE.pics) {
       this.setState({pics: window.APP_STATE.pics})
     }
     else {
-      await this.loadData();
+      this.loadData();
     }
   }
 
